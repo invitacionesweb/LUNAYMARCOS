@@ -1,0 +1,638 @@
+:root {
+    --color-principal:#F5F6F6;
+    --color-secundario:#AF8858;
+    --color-terciario:rgba(62, 57, 48, 0.9);
+    --font-principal: "Antic Didone", serif;
+    --font-secundaria:"EB Garamond", serif;;
+    --color-cuartro:#DBDBD1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-principal);
+    background-position: center center;
+    background-repeat: round;
+    background-size: contain;
+    overflow-x: hidden;
+
+}
+
+header {
+    background-color:var(--color-principal);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.audiodiv {
+    max-width: 300px;
+    text-align: center; 
+    margin: 4px auto;/* Ajusta el tamaño del reproductor */
+}
+
+.mejs-container {
+    background-color:var(--color-secundario); /* Cambia el color de fondo del reproductor */
+    border-radius: 8px; /* Esquinas redondeadas */
+}
+
+.mejs-controls {
+    background-color: #34495e; /* Color de fondo de los controles */
+}
+
+.mejs-button button {
+    background-color: #e74c3c; /* Color de los botones de reproducción, pausa, etc. */
+    color: white; /* Color del icono del botón */
+}
+
+.mejs-time-rail .mejs-time-total {
+    background-color: #7f8c8d; /* Color de la barra de progreso vacía */
+}
+
+.mejs-time-rail .mejs-time-current {
+    background-color: #1abc9c; /* Color de la barra de progreso actual */
+}
+
+.mejs-volume-button .mejs-horizontal-volume-current {
+    background-color: #3498db; /* Color del control de volumen */
+}
+
+.mejs-time {
+    color: white; /* Color del texto de la duración del audio */
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-principal);
+}
+.logo {
+    background-image:url(./IMAGENES/logo.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+
+}
+.logo h1 {
+    background-color:var(--color-principal);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-secundario);
+    font-family: var(--font-principal);
+}
+
+.hamburger {
+    color: var(--color-secundario);
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: var(--color-principal);
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background-color: var(--color-principal);
+}
+
+.nav-links li {
+    display: inline;
+    background-color: var(--color-principal);
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--color-secundario);
+
+
+}
+
+.rsvp-btn {
+    background-color:var(--color-secundario);
+    color: var(--color-principal) !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url('./IMAGENES/inicio.jpeg'); /* Placeholder for the background image */
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content {
+    margin-top:340px;
+    color: var(--color-principal);
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-family: var(--font-principal);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    font-family: var(--font-principal);
+}
+
+.hero p {
+    font-size: 18px;
+    font-family: var(--font-principal);
+}
+
+
+.inicio {
+    padding: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.inicio p {
+    color: var(--color-secundario);
+    font-family: var(--font-secundaria);
+}
+.inicio img {
+    width: 120px;
+    margin: auto;
+    padding: auto;
+}
+.fecha {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    border-top: 3px solid  rgba(62, 57, 48, 0.19);
+   border-top-style: double;
+   border-bottom: 3px solid  rgba(62, 57, 48, 0.19);
+   border-bottom-style: double;
+   
+
+}
+.fecha P {
+    font-family: var(--font-principal);
+    font-size: 26px;
+    color: var(--color-terciario);
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    
+    font-family: var(--font-principal);
+    color: var(--color-terciario);
+    
+   
+  
+}
+.details P {
+    margin: auto;
+    text-align: center;
+    max-width: 300px;
+   
+}
+.details h3{
+    letter-spacing: 0.2rem;
+    
+}
+.details div {
+    text-align: center;
+}
+.details .horarios {
+    color: var(--color-secundario);
+    font-family: var(--font-secundaria);
+    letter-spacing: 0rem;
+}
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+.count {
+    text-align: center;
+    color: var(--color-secundario);
+
+}
+
+.count span {
+    font-size: 36px;
+    display: block;
+    font-family: var(--font-principal);
+
+}
+
+.count p {
+    font-family: var(--font-principal);
+    font-size: 14px;
+    color: var(--color-terciario);
+
+}
+
+.boton {
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px 20PX;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: var(--font-principal);
+    letter-spacing: 0.2rem;
+
+
+ }
+ .boton:hover {
+     color: var(--color-secundario);
+     background-color: transparent;
+     border: 1px solid var(--color-secundario);
+     padding: 10px 30PX;
+     text-align: center;
+     text-decoration: none;
+ }
+
+
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.galeria img {
+    width: 25vw;
+    padding: 8px;
+}
+.f4 {
+    display: block;
+}
+.logoflor img{
+    width: 200px;
+}
+.logoflor {
+    position: absolute;
+    z-index: 3;
+    left: 1em;
+    top: 505px;
+    opacity: 0.9;
+    max-width: 100%; /* Limita su tamaño máximo para que no interfiera con el resto del contenido */
+}
+
+
+.logoflor2 img{
+    width: 200px;
+}
+.logoflor2 {
+    position: absolute;
+    z-index: 3;
+    left: 0em;
+    top: 905px;
+    opacity: 0.9;
+    max-width: 100%; /* Limita su tamaño máximo para que no interfiera con el resto del contenido */
+}
+
+
+/*TIMELINE*/
+.timeline {
+    margin: 10px 0 0 0;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-secundario);
+    font-family: var(--font-principal);
+    
+
+}
+.timeline h3 {
+    
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-family: var(--font-principal);
+    color: var(--color-secundario);
+    padding: 8px 0;
+    margin: auto;
+    
+}
+.timeline img {
+    width: 220px;
+    padding: auto;
+    margin: auto;
+}
+.timeline .iconos {
+    width: auto;
+    margin: auto;
+    padding: auto;
+    height: auto;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+   
+}
+.iconos img {
+    width: 94px;
+    margin: auto;
+}
+.lovestory {
+
+    background-color: var(--color-cuartro);
+    width: 96vw;
+    margin: auto;
+    background-image: url(./IMAGENES/fondoverde.png);
+    display: flex;
+    text-align: center;
+    font-family: var(--font-principal);
+}
+.lovestory-1 h3{
+    color: var(--color-secundario);
+    font-family: var(--font-secundaria);
+    letter-spacing: 0.2rem;
+    font-weight: lighter;
+
+}
+.lovestory .lovestory-1 {
+    padding: 40px 40px ;
+
+}
+.lovestory img {
+    width: 100%;
+    padding: 8px;
+}
+
+.accordion {
+    padding: 20PX 10PX 4px 10px;
+    width: 100%;
+    margin: auto;
+    background-color: var(--color-principal);
+  text-align: center;
+    font-family: var(--font-secundaria);
+    color: var(--color-terciario);
+  
+}
+.accordion H3 {
+    color: var(--color-secundario);
+    font-family: var(--font-secundaria);
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    text-align: center;
+}
+.accordion-item {
+    border: 1px solid #ddd;
+    margin: 4PX;
+    text-align: center;
+    font-family: var(--font-secundaria);
+}
+.accordion-item button {
+    margin: auto;
+    text-align: center;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    border: 1PX SOLID var(--color-terciario);
+    background-color:var(--color-principal);
+    color: var(--color-terciario);
+    font-family: var(--color-secundario);
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color:var(--color-cuartro);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content p {
+    padding: 15px 0 ;
+    margin: 0;
+    color: var(--color-terciario);
+    font-family: var(--font-secundaria);
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 150px;
+    padding: 15px;
+}
+
+.accordion-item.active .accordion-header {
+    background-color: var(--color-cuartro);
+}
+
+.gift-box {
+    margin-bottom: 2px;
+}
+.redes{
+    width: 92VW;
+    margin: auto;
+    background-color: var(--color-cuartro);
+    background-image:url(./IMAGENES/fondoverde.png);
+    padding: 40PX;
+    text-align: center;
+}
+.redes img {
+    width: 120px;
+    margin: auto;
+    padding: auto;
+}
+.redes h3 {
+    color: var(--color-secundario);
+    font-family: var(--font-secundaria);
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    text-align: center;
+}
+.redes p {
+    font-family: var(--font-principal);
+    padding: 10px 0;
+}
+.redes-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+   
+    margin: auto;
+    text-align: center;
+}
+.endend {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    color: var(--color-terciario);
+}
+.endend img {
+
+    width: 120px;
+    margin: auto;
+    padding: auto;
+}
+
+
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 40px 0;
+    flex-direction: column;
+    text-align: center;
+}
+footer .logo {
+    width: 40px;
+    padding: 0;
+    margin: 0;
+}
+footer .contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+footer img {
+    width: 60px;
+}
+.contenido ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.contenido a {
+    color: var(--color-principal);
+  }
+
+.contenido a:hover {
+    color: #ffffff;
+  }
+/* Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--color-principal);
+        color: var(--color-secundario);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+        padding: 0 0 0 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .logoflor {
+        max-width: 100vw; /* Se ajusta al ancho de la pantalla */
+        width: 60px; /* Ajusta el tamaño a algo más pequeño para móviles */
+        left: -65px; /* Ajusta la posición para que no interfiera con la imagen de fondo */
+        top: 750px;
+        z-index: 3;
+       
+    }
+    .logoflor2 {
+        max-width: 100vw; /* Se ajusta al ancho de la pantalla */
+        width: 100vw; /* Ajusta el tamaño a algo más pequeño para móviles */
+        top: 1360px;
+        overflow-x: hidden; /* También agregarlo a html */
+        transform: scaleX(-1);
+    }
+    .logoflor2 img {
+        margin-left: -90px;
+    }
+    
+   
+
+    .hero {
+        background-image: url('./IMAGENES/inicio.jpeg'); /* Placeholder for the background image */
+
+        padding-top: 60px; /* Agrega un poco más de espacio entre el logotipo y la imagen */
+    }
+
+    .hero h1 {
+        font-size: 28px; /* Asegúrate de que el texto sea legible en pantallas pequeñas */
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.galeria img {
+    width: 100vw;
+}
+.f4 {
+    display: none;
+}
+
+.timeline .iconos {
+    flex-direction: column;
+    
+}
+.lovestory {
+    flex-direction: column;
+}
+}

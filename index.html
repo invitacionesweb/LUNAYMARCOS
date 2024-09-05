@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna & Marcos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">  </head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" />
+
+
+
+    <body>
+
+    <header>
+        <nav>
+            <div class="logo">
+
+                <!--<h1>L&M</h1>-->
+            </div>
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#section1">Detalles</a></li>
+                <li><a href="#section2">Información</a></li>
+                <li><a href="#section3">Redes</a></li>
+
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe-maDNvlU952yO2ByGrbj4tK0nwbPo2yJvkSEaj0bpXHaVNw/viewform?usp=sf_link" class="rsvp-btn">RSVP</a></li>
+                <br>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div  data-aos="fade-up"  class="hero-content">
+                <h1>Luna Alvarez 
+                    <i>&</i> Marcos Montenegro </h1>
+                <p>Sábado, 04 Enero 2025</p>
+            </div>
+        </section>
+        <div class="audiodiv">
+            <audio controls .mejs-container autoplay src="./ben-e-king--stand-by-me-letra--video.mp3"></audio >
+        </div> 
+        <section class="inicio">
+
+                <img data-aos="fade-up"  src="./IMAGENES/flower-2-1-800x373.png" alt="">
+
+          <p data-aos="fade-up" ><i>Te invitamos a celebrar nuestra boda</i></p>
+            <div data-aos="fade-up"  class="fecha">
+                <p>04 DE ENERO DE 2025</p>
+            </div>
+        </section>
+        
+        <section class="details">
+            <div data-aos="fade-up" class="ceremony">
+                <h3 >LA CEREMONIA</h3>
+                <p  class="horarios"><i>20:30 hs - toma tu lugar <br>  21:00 hs - Ceremonia</i></p>
+                <p  >Capilla Santa Teresita</p>
+                <p  >Gualeguaychú Golf Club s/n, B1667 Manuel Alberti, Provincia de Buenos Aires, Argentina.</p>
+                <br>
+                <a data-aos="fade-up" class="boton" href="https://maps.app.goo.gl/pxW961j94sCM2hp78?g_st=ic">CÓMO LLEGAR</a>
+            </div>
+            <br><br>
+            <div data-aos="fade-up" class="reception">
+                <h3  >LA RECEPCIÓN</h3>
+                <p  class="horarios"><i>22:00 hs - Recepción</i></p>
+                <p  >Espacio Pilar I</p>
+                <p  >Chile 1963, La Lonja, Provincia de Buenos Aires, Argentina.</p>
+                <br>
+                <a data-aos="fade-up"  class="boton" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x95bc9c1f88e8d1bf:0x7b9c31fbe5d50386?entry=s&sa=X&ved=1t:8290&hl=en-us&ictx=111">CÓMO LLEGAR</a>
+           
+            </div>
+        </section>
+
+      
+            <section data-aos="fade-up" class="countdown">
+                <div class="count">
+                    <span id="days"></span> <p>Días</p>
+                </div>
+                <div class="count">
+                    <span id="hours"></span> <p>Horas</p>
+                </div>
+                <div class="count">
+                    <span id="minutes"></span> <p>Minutos</p>
+                </div>
+                <div class="count">
+                    <span id="seconds"></span> <p>Segundos</p>
+                </div>
+            </section>
+    </main>
+
+    <!--
+        GALERIA DE FOTOS
+    -->
+    <div data-aos="fade-up"  class="galeria">
+        <img class="f1" src="./FOTOS/1.png" alt="Novios">
+        <img class="f4" src="./FOTOS/2.png" alt="Novios">
+        <img class="f4" src="./FOTOS/3.png"  alt="Novios">
+        <img class="f4" src="./FOTOS/4.png"  alt="Novios">
+    </div>
+  <!--
+       <div class="logoflor">
+        <img src="./IMAGENES/flor.png" alt="">
+    </div>
+    <div class="logoflor2">
+        <img src="./IMAGENES/flor.png" alt="">
+    </div>
+  -->
+
+
+    <div  id="section1" class="timeline">
+        <img data-aos="fade-up" src="./IMAGENES/flower-2-1-800x373.png" alt="">
+        <br>
+        <h3 data-aos="fade-up" >DETALLES</h3>
+        <div class="iconos">
+            <div data-aos="fade-up"  class="iconos-block">
+                <img src="./img/iglesia.png" alt="icono">
+                <p>20:30 Hs</p>
+                <p>Toma tu lugar</p>
+            </div>
+            <div data-aos="fade-up"  class="iconos-block">
+                <img src="./img/iglesia (2).png" alt="icono">
+                <p>21:00 Hs</p>
+                <p>Ceremonia</p>
+            </div>
+            <div data-aos="fade-up"  class="iconos-block">
+                <img src="./img/iglesia (3).png" alt="icono">
+                <p>22:00 Hs</p>
+                <p>Recepción</p>
+            </div>
+        <!--
+                <div data-aos="fade-up" class="iconos-block">
+                <img src="./img/iglesia (4).png" alt="icono">
+                <p>22:00 Hs</p>
+                <p>1er plato</p>
+            </div>
+        -->
+            <div  data-aos="fade-up"  class="iconos-block">
+                <img src="./img/iglesia (5).png" alt="icono">
+                <p>00:00 Hs</p>
+                <p>Fiesta</p>
+            </div>
+            <div  data-aos="fade-up"  class="iconos-block">
+                <img src="./img/iglesia (6).png" alt="icono">
+                <p>06:00 Hs</p>
+                <p>Vuelta a casa</p>
+            </div>
+            
+        </div>
+        <br>
+        <img data-aos="fade-up" src="./IMAGENES/floresdos.png" alt="">
+
+    </div>
+    <br>
+    <div data-aos="fade-up"  class="galeria">
+        <img class="f1" src="./FOTOS/5.png" alt="Novios">
+        <img class="f4" src="./FOTOS/6.png" alt="Novios">
+        <img class="f4" src="./FOTOS/7.png"  alt="Novios">
+        <img class="f4" src="./FOTOS/8.png"  alt="Novios">
+    </div>
+<!--
+        <div class="lovestory">
+      <div class="lovestory-1">
+        <h3 data-aos="fade-up" ><i>Nuestra historia</i></h3>
+        <p data-aos="fade-up" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et sapiente perspiciatis soluta non obcaecati beatae odit! Error natus necessitatibus sint, alias accusantium atque cumque, deserunt perferendis odio facere voluptatem?</p>
+       <br>
+        <p data-aos="fade-up" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et sapiente perspiciatis soluta non obcaecati beatae odit! Error natus necessitatibus sint, alias accusantium atque cumque, deserunt perferendis odio facere voluptatem?</p>
+        <br>
+        <p data-aos="fade-up" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et sapiente perspiciatis soluta non obcaecati beatae odit! Error natus necessitatibus sint, alias accusantium atque cumque, deserunt perferendis odio facere voluptatem?</p>
+        <br>
+        <p data-aos="fade-up" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et sapiente perspiciatis soluta non obcaecati beatae odit! Error natus necessitatibus sint, alias accusantium atque cumque, deserunt perferendis odio facere voluptatem?</p>
+
+      </div>
+      <div class="lovestory-2">
+        <img src="./FOTOS/2.png" alt="">
+      </div>
+    </div>
+-->
+    
+
+
+    <div id="section2" class="accordion">
+        <H3><i>Información</i></H3>
+        <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">DRESS CODE</button>
+            <div class="accordion-content">
+                <p>Elegante. Recordá que el blanco es exclusivo para la novia. </p> <br>
+
+            </div>
+        </div>
+
+        <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">MESA DE REGALOS</button>
+            <div class="accordion-content">
+                <p>Tu presencia es lo más importante, pero si queres hacernos un regalo, podes ayudarnos con nuestra luna de miel.
+
+                </p>
+                <div class="gift-block">
+                    <div class="gift-box">
+                        <div class="boton" onclick="copyToClipboard('0070139230004054624051')">CBU PESOS</div>
+                    </div>
+                    
+                    <div class="gift-box">
+                        <div class="boton" onclick="copyToClipboard('LYM.CASAMIENTO.AR')">ALIAS PESOS</div>
+                    </div>
+                    <div class="gift-box">
+                        <div class="boton" onclick="copyToClipboard('0070139231004014860186')">CBU DÓLARES</div>
+                    </div>
+                    
+                    <div class="gift-box">
+                        <div class="boton" onclick="copyToClipboard('LYM.CASAMIENTO.USD')">ALIAS DÓLARES</div>
+                    </div>
+                 
+                    
+                </div>
+                <p >Hace click para copiar los datos de nuestra cuenta.</p>
+                <br>
+            </div>
+        </div>
+
+        <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">RSVP</button>
+            <div class="accordion-content">
+                <p>No olvides confirmar asistencia antes del 04/12/2024. Completá un formulario por persona.</p> 
+                <a  class="boton" href="https://forms.gle/s9X5g6AvuxcAActH7">CONFIRMAR</a><br> <br> <br>
+
+            </div>
+        </div>
+  <br>
+    </div>
+
+<div id="section3"  class="redes">
+    <img data-aos="fade-up" src="./IMAGENES/flower-2-1-800x373.png" alt="">
+<h3 data-aos="fade-up" >La fiesta la haces vos</h3>
+<p data-aos="fade-up" >No nos queremos perder de nada, usa nuestro hashtag y ayudanos a elegir la música de la noche.</p>
+<div class="redes-botones">
+<a data-aos="fade-up"  class="boton" href="https://www.instagram.com/explore/search/keyword/?q=%23lunaymarcos">#LunayMarcos</a>
+<a data-aos="fade-up"  class="boton" href="https://forms.gle/dE5rrDRzvTT7tGV66">RECOMENDAR</a>
+</div>
+
+</div>
+
+<div data-aos="fade-up"  class="galeria">
+    <img class="f1" src="./FOTOS/9.png" alt="Novios">
+    <img class="f4" src="./FOTOS/10.png" alt="Novios">
+    <img class="f4" src="./FOTOS/11.png"  alt="Novios">
+    <img class="f4" src="./FOTOS/12.png"  alt="Novios">
+</div>
+
+<div class="endend">
+    <br>
+<img data-aos="fade-up" src="./IMAGENES/logo.png" alt="">
+<br>
+</div>
+
+ 
+<footer>
+    <div class="contenido">
+     <div>
+       <img class="logo" src="./img/Frame 15.png" alt="icono si quiero">
+         <p>Hecho con &hearts; <br>
+         &#169 <b>Si,quiero!</b>, invitaciones inteligentes.
+         <br> Todos los derechos reservados.</p>
+     </div>
+        
+     <div class="contenido-list">
+         <ul>
+             <li><a target="_blank" href="https://www.instagram.com/siquiero.arg/"><i class="bi bi-instagram"></i></a></li>
+             <li><a target="_blank" href="https://www.facebook.com/Invitaciones-web-112187784608681"><i class="bi bi-facebook"></i></a></li>
+             <li><a target="_blank" href="mailto:siquiero.invitaciones@gmail.com"><i class="bi bi-envelope"></i></a></li>
+           </ul>
+     </div>
+    </div>
+    
+ </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+<script>
+   
+
+    function copyToClipboard(text) {
+       const tempInput = document.createElement("input");
+       document.body.appendChild(tempInput);
+       tempInput.value = text;
+       tempInput.select();
+       document.execCommand("copy");
+       document.body.removeChild(tempInput);
+       alert(`Copiaste los datos de cuenta "${text}" a tu portapapeles`);
+     }
+   </script>
+   <script>
+    // Establecer la fecha de la boda (Asegúrate de poner la fecha correcta)
+    var weddingDate = new Date("Jan 04, 2025 21:30:00").getTime();
+
+    // Actualizar la cuenta regresiva cada segundo
+    var countdownFunction = setInterval(function() {
+
+        // Obtener la fecha y hora actual
+        var now = new Date().getTime();
+
+        // Encontrar la diferencia entre ahora y la fecha de la boda
+        var distance = weddingDate - now;
+
+        // Cálculos de tiempo para días, horas, minutos y segundos
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Mostrar el resultado en los elementos con los IDs correspondientes
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        // Si la cuenta regresiva ha terminado, mostrar un mensaje
+        if (distance < 0) {
+            clearInterval(countdownFunction);
+            document.querySelector(".countdown").innerHTML = "¡La boda ya ha comenzado!";
+        }
+    }, 1000);
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+
+</body>
+</html>
