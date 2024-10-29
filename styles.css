@@ -271,8 +271,16 @@ nav {
      text-align: center;
      text-decoration: none;
  }
-
-
+.boton2 {
+    text-decoration: none;
+    width: 100%;
+    height:100% ;
+    color: var(--color-principal);
+}
+.boton2:hover {
+    text-decoration: none;
+    color: var(--color-secundario);
+}
 .galeria {
     width: 100%;
     display: grid;
